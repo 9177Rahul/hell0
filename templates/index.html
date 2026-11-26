@@ -1,1 +1,25 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OOPsVerse — Learn Java OOPs</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="topbar"><button class="menu-btn" id="menuBtn" aria-label="Toggle syllabus">☰</button><a class="brand" href="#"><span class="brand-mark">O</span><span>OOPs<span class="brand-accent">Verse</span></span></a><div class="top-actions"><span class="course-label">JAVA · OOP LEARNING</span><button id="themeBtn" class="icon-btn" title="Toggle theme">☾</button></div></header>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar"><div class="side-heading"><span>YOUR SYLLABUS</span><span class="pill">2026</span></div><div id="syllabusNav"></div><div class="side-footer"><div class="progress-label"><span>Learning journey</span><b id="progressText">0%</b></div><div class="progress-track"><div id="progressBar"></div></div><small>Mark topics complete as you learn.</small></div></aside>
+<main class="main" id="main"><section class="hero"><div class="eyebrow">LEARN · VISUALIZE · CODE</div><h1>Understand Java.<br><span>Think in objects.</span></h1><p>A story-driven journey through your Java OOPs syllabus. Explore concepts, see how they work, and run Java programs right here.</p><button class="primary-btn" id="startBtn">Start learning <span>→</span></button><div class="hero-art"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="code-card"><div class="dots"><i></i><i></i><i></i></div><pre><span class="kw">class</span> <span class="type">Student</span> {
+  String name;
+  <span class="kw">void</span> learn() {
+    System.out.println(
+      <span class="str">"Hello, OOPs!"</span>);
+  }
+}</pre></div><div class="float-tag tag-one">Classes & Objects</div><div class="float-tag tag-two">Inheritance ↗</div></div></section>
+<section class="welcome-grid"><article class="welcome-card"><div class="card-icon">✦</div><h3>Learn through stories</h3><p>Connect abstract programming ideas to familiar situations from everyday life.</p></article><article class="welcome-card"><div class="card-icon">◈</div><h3>See concepts visually</h3><p>Use diagrams and guided visual explanations to understand how code behaves.</p></article><article class="welcome-card"><div class="card-icon">⌘</div><h3>Practice in Java</h3><p>Edit examples, run programs, and learn from compiler output and errors.</p></article></section>
+<section class="module-overview"><div class="section-heading"><div><div class="eyebrow">YOUR COURSE MAP</div><h2>Explore the syllabus</h2></div><span class="muted" id="topicCount"></span></div><div class="module-cards" id="moduleCards"></div></section>
+<footer>OOPsVerse <span>·</span> A syllabus-based Java learning space</footer></main>
+</div>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body></html>
